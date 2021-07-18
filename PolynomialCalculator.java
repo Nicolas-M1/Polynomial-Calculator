@@ -90,7 +90,7 @@ class Main {
     return toDouble(strNum);
   }//getNextX
 
-  //fromIndex is expected to be immediately after the previous OPEN_PAREN
+  //fromIndex is expected to be on or immediately after the previous OPEN_PAREN
   private static BigDecimal getNextY(String input, int fromIndex){
     int startIndex = input.indexOf(SEPARATOR,fromIndex);
     int endIndex = input.indexOf(CLOSE_PAREN,fromIndex);
